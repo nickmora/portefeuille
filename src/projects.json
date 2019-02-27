@@ -1,0 +1,27 @@
+[
+    {
+        "title" : "Pawstagram",
+        "img" : "/images/paws.jpg",
+        "altText": "Pawstagram! It's social media for pets",
+        "deployed" : "https://pawstagram.herokuapp.com/",
+        "git" : "https://github.com/sgenini/Pawstagram",
+        "description" : "It's social media for your pets!",
+        "id" : 1
+    },{
+        "title" : "Jobscrybe",
+        "img" : "/images/jobscrybe.jpeg",
+        "altText": "Jobscrybe: Test your resume before you apply",
+        "deployed" : "https://evening-brook-18257.herokuapp.com/",
+        "git" : "https://github.com/albertshay888/jobscrybe",
+        "description" : "Test your resume before you apply",
+        "id" : 2
+    },{
+        "title" : "New York Times Scraper",
+        "img" : "/images/nytScrape.jpeg",
+        "altText": "New York Times Scraper: Scrape articles from the New York Times and save them for later",
+        "deployed" : "https://nyt-scraper1231.herokuapp.com/",
+        "git" : "https://github.com/nickmora/NYT-Scraper",
+        "description" : "Scrape articles from the New York Times and save them for later",
+        "id" : 3
+    }
+]
