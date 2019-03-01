@@ -4,7 +4,7 @@
         "img" : "/images/paws.jpg",
         "altText": "Pawstagram! It's social media for pets",
         "deployed" : "https://pawstagram.herokuapp.com/",
-        "git" : "https://github.com/sgenini/Pawstagram",
+        "git" : "https://github.com/nickmora/Pawstagram",
         "description" : "It's social media for your pets!",
         "id" : 1
     },{
@@ -12,7 +12,7 @@
         "img" : "/images/jobscrybe.jpeg",
         "altText": "Jobscrybe: Test your resume before you apply",
         "deployed" : "https://evening-brook-18257.herokuapp.com/",
-        "git" : "https://github.com/albertshay888/jobscrybe",
+        "git" : "https://github.com/nickmora/jobscrybe",
         "description" : "Test your resume before you apply",
         "id" : 2
     },{

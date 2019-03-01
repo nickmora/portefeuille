@@ -41,10 +41,10 @@ class ImgMediaCard extends React.Component {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" href = {this.props.deployed}>
             Check it out
         </Button>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" href = {this.props.git}>
             See the GitHub
         </Button>
         </CardActions>

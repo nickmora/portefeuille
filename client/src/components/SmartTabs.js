@@ -11,7 +11,6 @@ import Contact from "./Pages/Contact"
 import Portfolio from "./Pages/Portfolio"
 import Welcome from "./Pages/Welcome"
 import About from './Pages/About';
-// import monogram from "/images/monogram.svg"
 import { SvgIcon } from '@material-ui/core';
 import IconButton from "@material-ui/core/IconButton"
 
@@ -37,7 +36,7 @@ function Monogram(props) {
   return (
 
       <SvgIcon {...props} >
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        {<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />}
       </SvgIcon>
   )
 }

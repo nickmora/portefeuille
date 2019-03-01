@@ -27,13 +27,35 @@ const styles = theme => ({
 class Contact extends Component {
     state = {
         name: '',
-        age: '',
-        multiline: '',
+        phone: '',
+        email: "",
+        subject: "",
+        message: ""
     };
 
     handleChange = name => event => {
         this.setState({ [name]: event.target.value });
     };
+
+    handleSubmit = event =>{
+        event.preventDefault();
+        if (!this.state.name || !this.state.email || !this.state.subject || !this.state.message){
+            console.log(this.state)
+            alert("Hey, you didn't fill out all the fields!")
+        } else {
+            alert("Looks like it's werkin!")
+            // API.sendMessage({
+            //     name: this.state.name,
+            //     email: this.state.email,
+            //     phone: this.state.phone,
+            //     subject: this.state.subject,
+            //     message: this.state.message
+            // }).then(resp=>{
+
+            // })
+        }
+
+    }
 
     render() {
         const { classes } = this.props;
@@ -59,6 +81,46 @@ class Contact extends Component {
                                     <Grid item md={8}>
                                         <Paper style={{ padding: 24 }}>
                                             <form className={classes.container} noValidate autoComplete="off">
+                                                
+                                                <Grid item md={12}>
+                                                    <TextField
+                                                        required
+                                                        style={{ margin: 8 }}
+                                                        fullWidth
+                                                        id="standard-name"
+                                                        label="Your Name"
+                                                        value={this.state.name}
+                                                        onChange={this.handleChange('name')}
+                                                        margin="normal"
+
+                                                    />
+                                                </Grid>
+                                                <Grid item md={12}>
+                                                    <TextField
+                                                        required
+                                                        style={{ margin: 8 }}
+                                                        fullWidth
+                                                        id="standard-name"
+                                                        label="Your Email"
+                                                        value={this.state.email}
+                                                        onChange={this.handleChange('email')}
+                                                        margin="normal"
+
+                                                    />
+                                                </Grid>
+                                                <Grid item md={12}>
+                                                    <TextField
+                                                        required
+                                                        style={{ margin: 8 }}
+                                                        fullWidth
+                                                        id="standard-name"
+                                                        label="Your Phone Number"
+                                                        value={this.state.phone}
+                                                        onChange={this.handleChange('phone')}
+                                                        margin="normal"
+
+                                                    />
+                                                </Grid>
                                                 <Grid item md={12}>
                                                     <TextField
                                                         required
@@ -75,60 +137,28 @@ class Contact extends Component {
                                                 </Grid>
                                                 <Grid item md={12}>
                                                     <TextField
-                                                        required
-                                                        style={{ margin: 8 }}
-                                                        fullWidth
-                                                        id="standard-name"
-                                                        label="Name"
-                                                        value={this.state.name}
-                                                        onChange={this.handleChange('name')}
-                                                        margin="normal"
-
-                                                    />
-                                                </Grid>
-                                                <Grid item md={12}>
-                                                    <TextField
-                                                        required
-                                                        style={{ margin: 8 }}
-                                                        fullWidth
-                                                        id="standard-name"
-                                                        label="Email"
-                                                        value={this.state.email}
-                                                        onChange={this.handleChange('email')}
-                                                        margin="normal"
-
-                                                    />
-                                                </Grid>
-                                                <Grid item md={12}>
-                                                    <TextField
-                                                        required
-                                                        style={{ margin: 8 }}
-                                                        fullWidth
-                                                        id="standard-name"
-                                                        label="Phone Number"
-                                                        value={this.state.phone}
-                                                        onChange={this.handleChange('phone')}
-                                                        margin="normal"
-
-                                                    />
-                                                </Grid>
-                                                <Grid item md={12}>
-                                                    <TextField
                                                         fullWidth
                                                         style={{ margin: 8 }}
                                                         id="standard-multiline-flexible"
-                                                        label="Message Body"
+                                                        label="Your Message"
                                                         multiline
                                                         rowsMax="4"
-                                                        value={this.state.body}
-                                                        onChange={this.handleChange('body')}
+                                                        value={this.state.message}
+                                                        onChange={this.handleChange('message')}
                                                         margin="normal"
                                                         required
                                                     />
                                                 </Grid>
                                                 <Grid container justify="flex-end">
                                                     <Grid item>
-                                                        <Button className={classes.button} variant="contained" color="primary">
+                                                        <Button
+                                                            onClick = {this.handleSubmit} 
+                                                            type="submit" 
+                                                            className={classes.button} 
+                                                            variant="contained" 
+                                                            color="primary"
+                                                            style={{marginTop:25}}
+                                                        >
                                                             Submit
                                                         </Button>
                                                     </Grid>

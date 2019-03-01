@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from "@material-ui/core/Paper"
+import monogram from "../../images/mukTown.jpg"
 const projects = require("../../projects.json")
 
 const styles = theme => ({
@@ -18,9 +19,11 @@ const styles = theme => ({
         marginRight: theme.spacing.unit * 2,
     },
     heroContent: {
-        maxWidth: 600,
+        maxWidth: 1200,
+        height: 500,
         margin: '0 auto',
         padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
+        backgroundImage: `url(${monogram})`
     },
     heroButtons: {
         marginTop: theme.spacing.unit * 4,
@@ -70,7 +73,7 @@ class Welcome extends React.Component {
                     {/* Hero unit */}
                     <div className={classes.heroUnit}>
                         <div className={classes.heroContent}>
-                            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+                            <Typography component="h1" variant="h2" align="center" color="primaryLight" gutterBottom>
                                 Nick Morales Design
                             </Typography>
                             <Typography variant="h6" align="center" color="textSecondary" paragraph>
