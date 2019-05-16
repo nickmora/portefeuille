@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import { Card, CardActionArea, CardContent, Typography, Grid, Paper, Button } from '@material-ui/core';
+import API from "../../utils/API"
 
 const styles = theme => ({
     container: {
@@ -43,16 +44,16 @@ class Contact extends Component {
             console.log(this.state)
             alert("Hey, you didn't fill out all the fields!")
         } else {
-            alert("Looks like it's werkin!")
-            // API.sendMessage({
-            //     name: this.state.name,
-            //     email: this.state.email,
-            //     phone: this.state.phone,
-            //     subject: this.state.subject,
-            //     message: this.state.message
-            // }).then(resp=>{
-
-            // })
+            // alert("Looks like it's werkin!")
+            API.sendEmail({
+                name: this.state.name,
+                email: this.state.email,
+                phone: this.state.phone,
+                subject: this.state.subject,
+                message: this.state.message
+            }).then(
+                console.log("Gee, I hope this worked")
+            )
         }
 
     }
@@ -78,7 +79,7 @@ class Contact extends Component {
                                     // justify = "center"
                                     // alignContent="center"
                                 >
-                                    <Grid item md={8}>
+                                    <Grid item md={12}>
                                         <Paper style={{ padding: 24 }}>
                                             <form className={classes.container} noValidate autoComplete="off">
                                                 

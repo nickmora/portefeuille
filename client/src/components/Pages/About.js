@@ -71,7 +71,7 @@ class About extends Component {
                                         </Grid>
                                         <Grid item md={3}>
                                             <Button
-                                                href="http://gmail.com"
+                                                href="mailto:nickmoralesdesign@gmail.com"
                                             >
 
                                                 <SvgIcon  viewBox="0 0 24 24">

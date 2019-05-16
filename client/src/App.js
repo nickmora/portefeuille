@@ -1,14 +1,12 @@
 import React, { Component, Fragment } from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
 import Card from './components/Card';
 import Contact from "./components/Pages/Contact";
 import Portfolio from "./components/Pages/Portfolio"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { from } from 'rxjs';
-import Home from './components/Pages/About';
 import SmartTabs from './components/SmartTabs';
 import Welcome from './components/Pages/Welcome';
+import About from './components/Pages/About';
+import { Typography } from '@material-ui/core';
 
 
 
@@ -17,20 +15,20 @@ class App extends Component {
     return (
       <Fragment>
   
-      <SmartTabs />
-      {/* <Router>
-        <Switch>
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route component={Home} />
+      {/* <SmartTabs /> */}
+      <Welcome />
+      <About />
+      <Contact />
+      <footer>
+        <Typography
+          variant = "h4"
+          component = "h4"
+          align = "center"
+        >
+          &copy; Copyright 2019 Nick Morales Design
+        </Typography>
+      </footer>
 
-
-          <div className="App">
-            <NavBar />
-            <Card />
-          </div>
-        </Switch>
-      </Router> */}
       </Fragment>
 
     );
