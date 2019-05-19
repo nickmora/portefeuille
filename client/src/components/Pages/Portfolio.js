@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Card from "../Card";
 import Grid from "@material-ui/core/Grid"
+import Project from "../Project"
 const projects = require("../../projects.json")
 
 class Portfolio extends Component {
@@ -19,8 +20,8 @@ class Portfolio extends Component {
 
 
                     {this.state.projects.map(project => (
-                        <Grid item key={project.id} sm={4}>
-                            <Card
+                        <Grid item key={project.id} sm={11}>
+                            <Project 
                                 title={project.title}
                                 img={project.img}
                                 description={project.description}
@@ -28,6 +29,14 @@ class Portfolio extends Component {
                                 altText={project.altText}
                                 git={project.git}
                             />
+                            {/* <Card
+                                title={project.title}
+                                img={project.img}
+                                description={project.description}
+                                deployed={project.deployed}
+                                altText={project.altText}
+                                git={project.git}
+                            /> */}
                         </Grid>
                     ))}
                 </Grid>

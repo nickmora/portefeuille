@@ -22,7 +22,6 @@ class ImgMediaCard extends React.Component {
     const { classes } = this.props;
     return (
       <Card className={classes.card}>
-        <CardActionArea>
           <CardMedia
             component="img"
             alt={this.props.altText}
@@ -39,7 +38,6 @@ class ImgMediaCard extends React.Component {
               {this.props.description}
             </Typography>
           </CardContent>
-        </CardActionArea>
         <CardActions>
           <Button size="small" color="primary" href = {this.props.deployed}>
             Check it out
