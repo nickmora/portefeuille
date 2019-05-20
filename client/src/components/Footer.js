@@ -1,22 +1,28 @@
 import React from "react";
-import { Typography, Card, CardContent } from "@material-ui/core";
+import { Typography, Card, CardContent, Grid } from "@material-ui/core";
 
-const Footer = props => {
+const Footer = () => {
     return (
-        <footer>
-            <Card>
-                <CardContent>
+        <div>
+            <Grid container spacing={24} justify = "center">
+                <Grid item sm={11}>
+                    <Card>
+                        <CardContent>
 
-                    <Typography
-                        variant="h4"
-                        component="h4"
-                        align="center"
-                    >
-                        Copyright Nick Morales Design &copy; 2019
+                            <Typography
+                                variant="h4"
+                                component="h4"
+                                align="center"
+                            >
+                                Copyright Nick Morales Design &copy; 2019
                     </Typography>
-                </CardContent>
-            </Card>
-        </footer>
+                        </CardContent>
+                    </Card>
+
+                </Grid>
+            </Grid>
+
+        </div>
     )
 }
 

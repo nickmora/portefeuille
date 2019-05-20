@@ -1,23 +1,23 @@
-import React, { Component, Fragment } from 'react';
-import Contact from "./components/Pages/Contact";
+import React, { Component } from 'react';
 import About from './components/Pages/About';
 import Footer from "./components/Footer"
 import Portfolio from "./components/Pages/Portfolio"
-import { Typography } from '@material-ui/core';
+import "./styles/App.css"
 
 
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <div
+        className = "main"
+      >
 
         <About />
-        {/* <Contact /> */}
         <Portfolio />
         <Footer />
 
-      </Fragment>
+      </div>
 
     );
   }

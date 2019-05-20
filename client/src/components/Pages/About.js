@@ -3,14 +3,11 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card";
 import Grid from "@material-ui/core/Grid";
-import { Typography, CardMedia, CardContent, SvgIcon, CardActions, Button, Avatar, CardHeader } from "@material-ui/core";
+import { Typography, CardContent, SvgIcon, CardActions, Button, Avatar} from "@material-ui/core";
 import headshot from "../../images/headshot.jpg"
-// import { styles } from "ansi-colors";
+
 
 const styles = {
-    media: {
-        objectFit: "cover"
-    },
     avatar: {
         margin: 15,
         width: 200,
