@@ -4,7 +4,8 @@ import { withStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card";
 import Grid from "@material-ui/core/Grid";
 import { Typography, CardContent, SvgIcon, CardActions, Button, Avatar} from "@material-ui/core";
-import headshot from "../../images/headshot.jpg"
+// import headshot from "../../images/headshot.jpg"
+import logo from "../../images/monogram.svg"
 
 
 const styles = {
@@ -13,7 +14,7 @@ const styles = {
         width: 200,
         height: 200,
         border: "solid",
-        borderColor: "gray",
+        borderColor: "black",
         borderWidth: 5
     },
     card: {
@@ -46,7 +47,7 @@ class About extends Component {
 
                                     <Avatar
                                         className={classes.avatar}
-                                        src={headshot}
+                                        src={logo}
                                         alt="Nick Morales Design"
                                     />
 
