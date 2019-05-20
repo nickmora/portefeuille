@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Card from "../Card";
 import Grid from "@material-ui/core/Grid"
 import Project from "../Project"
 const projects = require("../../projects.json")
@@ -28,15 +27,9 @@ class Portfolio extends Component {
                                 deployed={project.deployed}
                                 altText={project.altText}
                                 git={project.git}
+                                techs = {project.techs}
                             />
-                            {/* <Card
-                                title={project.title}
-                                img={project.img}
-                                description={project.description}
-                                deployed={project.deployed}
-                                altText={project.altText}
-                                git={project.git}
-                            /> */}
+                        
                         </Grid>
                     ))}
                 </Grid>

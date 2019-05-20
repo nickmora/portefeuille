@@ -2,9 +2,8 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Typography, CardActionArea, CardMedia, CardContent, SvgIcon, CardActions, Button, Avatar, CardHeader } from "@material-ui/core";
+import { Typography, CardMedia, CardContent, SvgIcon, CardActions, Button, Avatar, CardHeader } from "@material-ui/core";
 import headshot from "../../images/headshot.jpg"
 // import { styles } from "ansi-colors";
 
@@ -17,11 +16,12 @@ const styles = {
         width: 200,
         height: 200,
         border: "solid",
-        borderColor: "red",
-        borderWidth: 10
+        borderColor: "gray",
+        borderWidth: 5
     },
     card: {
-        marginTop: 50
+        marginTop: 50,
+        width: "100%"
     }
 }
 
@@ -33,30 +33,34 @@ class About extends Component {
                 <Grid
                     container
                     spacing={32}
+                    justify = "center"
                 >
                     <Grid
                         item
-                        md={12}
+                        sm={11}
                         container
                         justify="center"
+                        
                     >
                         <Card className={classes.card}>
-
-                            <Grid item md={12} container justify="center">
-
-                                <Avatar
-                                    className={classes.avatar}
-                                    src={headshot}
-                                    alt="Nick Morales Design"
-                                />
-
-                            </Grid>
                             <CardContent>
 
+                                <Grid item md={12} container justify="center">
+
+                                    <Avatar
+                                        className={classes.avatar}
+                                        src={headshot}
+                                        alt="Nick Morales Design"
+                                    />
+
+                                </Grid>
+
                                 <CardActions>
-                                    <Grid container justify="space-evenly">
-                                        <Grid item md={3}>
+                                    <Grid spacing={8} item md = {12} lg = {12} container justify="center">
+                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
                                             <Button
+                                                fullWidth
+                                                target="_blank"
                                                 href="https://github.com/nickmora"
                                             >
 
@@ -65,8 +69,10 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item md={3}>
+                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
                                             <Button
+                                                fullWidth
+                                                target="_blank"
                                                 href="https://www.instagram.com/nickmoralesdesign/"
                                             >
                                                 <SvgIcon viewBox="0 0 24 24">
@@ -74,8 +80,10 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item md={3}>
+                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
                                             <Button
+                                                fullWidth
+                                                target="_blank"
                                                 href="https://www.linkedin.com/in/nick-morales-970437173/"
                                             >
 
@@ -84,8 +92,10 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item md={3}>
+                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
                                             <Button
+                                                fullWidth
+                                                target="_blank"
                                                 href="mailto:nickmoralesdesign@gmail.com"
                                             >
 
@@ -100,14 +110,14 @@ class About extends Component {
                                     Nick Morales Design
                                 </Typography>
                                 <Typography variant="h6" align="center">
-                                    Full Stack Web Developer <span>|</span> Cutting Edge Graphic Design
+                                    Full Stack Web Developer <span>|</span> Graphic Arts & Design
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
 
                     <Grid item md={12} container justify="center">
-                        <Grid item md={8} >
+                        <Grid item md={11} >
                             <Card >
                                 <CardContent>
                                     <Typography
@@ -122,7 +132,6 @@ class About extends Component {
                         </Grid>
                     </Grid>
                 </Grid>
-                {/* <Card /> */}
             </Fragment>
         )
     }
