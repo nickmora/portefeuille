@@ -10,7 +10,7 @@ const Footer = () => {
                         <CardContent>
 
                             <Typography
-                                variant="h4"
+                                variant="p"
                                 component="h4"
                                 align="center"
                             >

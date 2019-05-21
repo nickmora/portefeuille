@@ -1,7 +1,7 @@
 [
     {
         "title" : "To Do List",
-        "img" : "/images/nytScrape.jpeg",
+        "img" : "/images/todolist.png",
         "altText": "To Do List: A full stack to-do list application with collaborative comment capability",
         "deployed" : "https://secure-hollows-14376.herokuapp.com/",
         "git" : "https://github.com/nickmora/todolist",
@@ -10,7 +10,7 @@
         "techs" : ["React for our front-end library", "Express.js for setting up our server", "Node.js for running the back end", "MongoDB, Mongoose, & mLab for maintaining a relational database"]
     },{
         "title" : "Pawstagram",
-        "img" : "/images/paws.jpg",
+        "img" : "/images/pawstagram.png",
         "altText": "Pawstagram! It's social media for pets",
         "deployed" : "https://pawstagram.herokuapp.com/",
         "git" : "https://github.com/nickmora/Pawstagram",

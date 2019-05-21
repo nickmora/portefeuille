@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card";
 import Grid from "@material-ui/core/Grid";
-import { Typography, CardContent, SvgIcon, CardActions, Button, Avatar} from "@material-ui/core";
+import { Typography, CardContent, SvgIcon, CardActions, Button, Avatar } from "@material-ui/core";
 // import headshot from "../../images/headshot.jpg"
 import logo from "../../images/monogram.svg"
 
@@ -31,14 +31,14 @@ class About extends Component {
                 <Grid
                     container
                     spacing={32}
-                    justify = "center"
+                    justify="center"
                 >
                     <Grid
                         item
                         sm={11}
                         container
                         justify="center"
-                        
+
                     >
                         <Card className={classes.card}>
                             <CardContent>
@@ -54,8 +54,8 @@ class About extends Component {
                                 </Grid>
 
                                 <CardActions>
-                                    <Grid spacing={8} item md = {12} lg = {12} container justify="center">
-                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
+                                    <Grid spacing={8} item md={12} lg={12} container justify="center">
+                                        <Grid item xs={3} sm={3} md={3} lg={1}>
                                             <Button
                                                 fullWidth
                                                 target="_blank"
@@ -67,7 +67,7 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
+                                        <Grid item xs={3} sm={3} md={3} lg={1}>
                                             <Button
                                                 fullWidth
                                                 target="_blank"
@@ -78,7 +78,7 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
+                                        <Grid item xs={3} sm={3} md={3} lg={1}>
                                             <Button
                                                 fullWidth
                                                 target="_blank"
@@ -90,7 +90,7 @@ class About extends Component {
                                                 </SvgIcon>
                                             </Button>
                                         </Grid>
-                                        <Grid item xs = {3} sm = {3} md={3} lg = {1}>
+                                        <Grid item xs={3} sm={3} md={3} lg={1}>
                                             <Button
                                                 fullWidth
                                                 target="_blank"
@@ -118,13 +118,21 @@ class About extends Component {
                         <Grid item md={11} >
                             <Card >
                                 <CardContent>
+                                    <Typography align="center" variant="h4" gutterBottom>
+                                        Hi, I'm Nick. It's a pleasure to meet you
+                                    </Typography>
                                     <Typography
                                         paragraph
                                         variant="h5"
                                         component="h2"
                                     >
-                                        Nick Morales is a full stack developer specializing in the MERN (MongoDB, React.js, Express.js, Node.js) stack.  Based out of Oakland, California, he is available for full-time employment whilst hopping from freelance gig to freelance gig.  Please checkout the Contact page if you would like to get in touch for a commission and / or collaboration
-                                </Typography>
+                                        {/* Nick Morales is a full stack developer specializing in the MERN (MongoDB, React.js, Express.js, Node.js) stack.  Based out of Oakland, California, he is available for full-time employment whilst hopping from freelance gig to freelance gig.  Please checkout the Contact page if you would like to get in touch for a commission and / or collaboration */}
+
+                                        I am a full stack developer and graphic designer based out of Oakland, California.  I specialize in the MERN stack
+                                    </Typography>
+                                    <Typography align="center" variant="h6">
+                                        My skills include: JavaScript ES6, HTML5, CSS3, Git, React, Redux, Node, Express, MySQL, MongoDB, Mocha, Python 3, Ruby, Material-UI, Django, Rails, Flask, Bootstrap 4, Bash, 
+                                    </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
