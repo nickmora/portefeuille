@@ -3,6 +3,7 @@ import About from './components/Pages/About';
 import Footer from "./components/Footer"
 import Portfolio from "./components/Pages/Portfolio"
 import "./styles/App.css"
+import TechStack from './components/Pages/TechStack';
 
 
 
@@ -14,6 +15,7 @@ class App extends Component {
       >
 
         <About />
+        {/* <TechStack /> */}
         <Portfolio />
         <Footer />
 

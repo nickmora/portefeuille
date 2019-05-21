@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <Grid container spacing={24} justify = "center">
-                <Grid item sm={11}>
+                <Grid item xs={11}>
                     <Card>
                         <CardContent>
 

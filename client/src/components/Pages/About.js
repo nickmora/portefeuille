@@ -27,7 +27,7 @@ class About extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Fragment>
+            <div>
                 <Grid
                     container
                     spacing={32}
@@ -114,8 +114,8 @@ class About extends Component {
                         </Card>
                     </Grid>
 
-                    <Grid item md={12} container justify="center">
-                        <Grid item md={11} >
+                    <Grid item xs={12} container justify="center">
+                        <Grid item xs={11} >
                             <Card >
                                 <CardContent>
                                     <Typography align="center" variant="h4" gutterBottom>
@@ -128,17 +128,17 @@ class About extends Component {
                                     >
                                         {/* Nick Morales is a full stack developer specializing in the MERN (MongoDB, React.js, Express.js, Node.js) stack.  Based out of Oakland, California, he is available for full-time employment whilst hopping from freelance gig to freelance gig.  Please checkout the Contact page if you would like to get in touch for a commission and / or collaboration */}
 
-                                        I am a full stack developer and graphic designer based out of Oakland, California.  I specialize in the MERN stack
+                                        I am a full stack developer and graphic designer based out of Oakland, California.  I specialize in JavaScript, employing libraries such as React, Redux, and Material-UI for the front end and MongoDB, Node, and Express for the back end.  I also have experience with Python and Ruby on Rails.  If you are interested in collaborating or learning more, please shoot me an email.
                                     </Typography>
                                     <Typography align="center" variant="h6">
-                                        My skills include: JavaScript ES6, HTML5, CSS3, Git, React, Redux, Node, Express, MySQL, MongoDB, Mocha, Python 3, Ruby, Material-UI, Django, Rails, Flask, Bootstrap 4, Bash, 
+                                        My skills include: JavaScript ES6, HTML5, CSS3, Git, React, Redux, Node, Express, MySQL, MongoDB, Mocha, Python 3, Ruby, Material-UI, Django, Rails, Flask, Bootstrap 4, Bash, Material Design 
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
                     </Grid>
                 </Grid>
-            </Fragment>
+            </div>
         )
     }
 }
