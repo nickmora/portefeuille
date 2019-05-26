@@ -1,7 +1,7 @@
 {
   "main.css": "https//:www.nickmora.github.io/portefeuille/static/css/main.7e75085d.chunk.css",
-  "main.js": "https//:www.nickmora.github.io/portefeuille/static/js/main.5333e6ec.chunk.js",
-  "main.js.map": "https//:www.nickmora.github.io/portefeuille/static/js/main.5333e6ec.chunk.js.map",
+  "main.js": "https//:www.nickmora.github.io/portefeuille/static/js/main.9ee24c6c.chunk.js",
+  "main.js.map": "https//:www.nickmora.github.io/portefeuille/static/js/main.9ee24c6c.chunk.js.map",
   "static/js/1.c4d90e12.chunk.js": "https//:www.nickmora.github.io/portefeuille/static/js/1.c4d90e12.chunk.js",
   "static/js/1.c4d90e12.chunk.js.map": "https//:www.nickmora.github.io/portefeuille/static/js/1.c4d90e12.chunk.js.map",
   "runtime~main.js": "https//:www.nickmora.github.io/portefeuille/static/js/runtime~main.f96c0533.js",
@@ -20,6 +20,6 @@
   "static/media/html5.svg": "https//:www.nickmora.github.io/portefeuille/static/media/html5.676e8188.svg",
   "static/css/main.7e75085d.chunk.css.map": "https//:www.nickmora.github.io/portefeuille/static/css/main.7e75085d.chunk.css.map",
   "index.html": "https//:www.nickmora.github.io/portefeuille/index.html",
-  "precache-manifest.c8f8348c3df123046d5f7dce11c54b82.js": "https//:www.nickmora.github.io/portefeuille/precache-manifest.c8f8348c3df123046d5f7dce11c54b82.js",
+  "precache-manifest.ed2aff224adddafe912b1ed8de024148.js": "https//:www.nickmora.github.io/portefeuille/precache-manifest.ed2aff224adddafe912b1ed8de024148.js",
   "service-worker.js": "https//:www.nickmora.github.io/portefeuille/service-worker.js"
 }
