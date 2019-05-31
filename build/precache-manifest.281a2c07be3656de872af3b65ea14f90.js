@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9ee24c6cb111a8fd00db",
+    "revision": "75260272831ef145c45c",
     "url": "https//:www.nickmora.github.io/portefeuille/static/css/main.7e75085d.chunk.css"
   },
   {
-    "revision": "9ee24c6cb111a8fd00db",
-    "url": "https//:www.nickmora.github.io/portefeuille/static/js/main.9ee24c6c.chunk.js"
+    "revision": "75260272831ef145c45c",
+    "url": "https//:www.nickmora.github.io/portefeuille/static/js/main.75260272.chunk.js"
   },
   {
     "revision": "c4d90e1259bcc7f00cf2",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "https//:www.nickmora.github.io/portefeuille/static/media/html5.676e8188.svg"
   },
   {
-    "revision": "abaf33f9fff144d6d77f3bf2e172747c",
+    "revision": "3ec59a23bc414114b47137af27481c46",
     "url": "https//:www.nickmora.github.io/portefeuille/index.html"
   }
 ];
