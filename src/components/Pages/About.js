@@ -35,7 +35,7 @@ class About extends Component {
                 >
                     <Grid
                         item
-                        sm={11}
+                        xs={11}
                         container
                         justify="center"
 
@@ -131,7 +131,7 @@ class About extends Component {
                                         I am a full stack developer and graphic designer based out of Oakland, California.  I specialize in JavaScript, employing libraries such as React, Redux, and Material-UI for the front end and MongoDB, Node, and Express for the back end.  I also have experience with Python and Ruby on Rails.  If you are interested in collaborating or learning more, please shoot me an email.
                                     </Typography>
                                     <Typography align="center" variant="h6">
-                                        My skills include: JavaScript ES6, HTML5, CSS3, Git, React, Redux, Node, Express, MySQL, MongoDB, Mocha, Python 3, Ruby, Material-UI, Django, Rails, Flask, Bootstrap 4, Bash, Material Design 
+                                        My skills include: JavaScript ES6, HTML5, CSS3, Git, React, Redux, Node, Express, MySQL, MongoDB, Mocha, Python 3, Ruby, Material-UI, Django, Rails, Flask, Bootstrap 4, Bash, Material Design, React Native, Express Handlebars, Firebase, Sequelize, MVC, jQuery, 
                                     </Typography>
                                 </CardContent>
                             </Card>

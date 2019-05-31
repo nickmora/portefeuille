@@ -15,7 +15,7 @@ class App extends Component {
       >
 
         <About />
-        {/* <TechStack /> */}
+        <TechStack />
         <Portfolio />
         <Footer />
 

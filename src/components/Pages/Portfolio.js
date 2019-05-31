@@ -19,7 +19,7 @@ class Portfolio extends Component {
 
 
                     {this.state.projects.map(project => (
-                        <Grid item key={project.id} sm={11}>
+                        <Grid item key={project.id} xs={11}>
                             <Project 
                                 title={project.title}
                                 img={project.img}

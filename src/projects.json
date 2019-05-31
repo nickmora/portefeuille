@@ -16,7 +16,7 @@
         "git" : "https://github.com/nickmora/Pawstagram",
         "description" : "It's social media for your pets!",
         "id" : 1,
-        "techs" : ["React for our front-end library", " Express.js for setting up our server", "Node.js for running the back end", "MongoDB, Mongoose, & mLab for maintaining a relational database"]
+        "techs" : ["Material Design Bootstrap and Express Handlebars for front end styling", " Express.js for setting up our server", "Node.js for running the back end", "MySQL & Sequelize for maintaining a relational database"]
     },{
         "title" : "Jobscrybe",
         "img" : "/images/jobscrybe.jpeg",

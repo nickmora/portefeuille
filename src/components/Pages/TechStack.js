@@ -10,40 +10,48 @@ import mongodbIcon from "../../images/logos/mongodb.svg"
 import nodeIcon from "../../images/logos/node.svg"
 import mysqlIcon from "../../images/logos/mysql.svg"
 import html5Icon from "../../images/logos/html5.svg"
-import { Grid, Card } from "@material-ui/core"
+import { Grid, Card, CardContent } from "@material-ui/core"
 import { withStyles } from "@material-ui/core/styles"
 
 const styles = {
     image: {
-        height: 150,
-        padding: 25
+        height: 35,
+        padding: 15
+    },
+    card: {
+        marginTop: 200,
+        width: "100%"
     }
 }
 
 const TechStack = (props) => {
     const { classes } = props
     return (
-        <Grid container spacing={16}>
-            <Card>
-                <Grid container item xs={11}>
+        <Grid container spacing={8} justify="center">
+            <Grid container item xs={11}>
+                <Card className={classes.card}>
+                    <CardContent>
+                        <Grid container xs={12} justify="center">
 
-                    <Grid item xs={8}>
-                        <img className={classes.image} src={bootstrapIcon} />
-                        <img className={classes.image} src={css3Icon} />
-                        <img className={classes.image} src={html5Icon} />
-                        <img className={classes.image} src={javascriptIcon} />
-                        <img className={classes.image} src={reactIcon} />
-                        <img className={classes.image} src={reduxIcon} />
-                        <img className={classes.image} src={materialUIIcon} />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <img className={classes.image} src={expressIcon} />
-                        <img className={classes.image} src={mongodbIcon} />
-                        <img className={classes.image} src={mysqlIcon} />
-                        <img className={classes.image} src={nodeIcon} />
-                    </Grid>
-                </Grid>
-            </Card>
+                            <Grid item xs={6}>
+                                <img className={classes.image} src={bootstrapIcon} alt="bootstrap" />
+                                <img className={classes.image} src={css3Icon} alt="css" />
+                                <img className={classes.image} src={html5Icon} alt="html" />
+                                <img className={classes.image} src={javascriptIcon} alt="javascript" />
+                                <img className={classes.image} src={reactIcon} alt="react" />
+                                <img className={classes.image} src={reduxIcon} alt="redux" />
+                                <img className={classes.image} src={materialUIIcon} alt="materialUI" />
+                            </Grid>
+                            <Grid item xs={6}>
+                                <img className={classes.image} src={expressIcon} alt="express" />
+                                <img className={classes.image} src={mongodbIcon} alt="mongo" />
+                                <img className={classes.image} src={mysqlIcon} alt="mysql" />
+                                <img className={classes.image} src={nodeIcon} alt="node" />
+                            </Grid>
+                        </Grid>
+                    </CardContent>
+                </Card>
+            </Grid>
         </Grid>
     )
 }
