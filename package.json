@@ -2,7 +2,7 @@
   "name": "portefeuille",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https//:www.nickmora.github.io/portefeuille",
+  "homepage": "https://www.nickmora.github.io/portefeuille",
   "dependencies": {
     "@material-ui/core": "^3.9.0",
     "gh-pages": "^2.0.1",
