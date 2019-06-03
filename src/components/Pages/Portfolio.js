@@ -28,6 +28,7 @@ class Portfolio extends Component {
                                 altText={project.altText}
                                 git={project.git}
                                 techs = {project.techs}
+                                key = {project.id}
                             />
                         
                         </Grid>

@@ -1,7 +1,7 @@
 [
     {
         "title" : "To Do List",
-        "img" : "/images/todolist.png",
+        "img" : "/images/projectImages/todolist.png",
         "altText": "To Do List: A full stack to-do list application with collaborative comment capability",
         "deployed" : "https://secure-hollows-14376.herokuapp.com/",
         "git" : "https://github.com/nickmora/todolist",
@@ -10,7 +10,7 @@
         "techs" : ["React for our front-end library", "Express.js for setting up our server", "Node.js for running the back end", "MongoDB, Mongoose, & mLab for maintaining a relational database"]
     },{
         "title" : "Pawstagram",
-        "img" : "/images/pawstagram.png",
+        "img" : "~/images/projectImages/pawstagram.png",
         "altText": "Pawstagram! It's social media for pets",
         "deployed" : "https://pawstagram.herokuapp.com/",
         "git" : "https://github.com/nickmora/Pawstagram",
@@ -19,7 +19,7 @@
         "techs" : ["Material Design Bootstrap and Express Handlebars for front end styling", " Express.js for setting up our server", "Node.js for running the back end", "MySQL & Sequelize for maintaining a relational database"]
     },{
         "title" : "Jobscrybe",
-        "img" : "/images/jobscrybe.jpeg",
+        "img" : "/images/projectImages/jobscrybe.jpeg",
         "altText": "Jobscrybe: Test your resume before you apply",
         "deployed" : "https://evening-brook-18257.herokuapp.com/",
         "git" : "https://github.com/nickmora/jobscrybe",
@@ -28,7 +28,7 @@
         "techs" : ["React for our front-end library", " Express.js for setting up our server", "Node.js for running the back end", "MongoDB, Mongoose, & mLab for maintaining a relational database"]
     },{
         "title" : "New York Times Scraper",
-        "img" : "/images/nytScrape.jpeg",
+        "img" : "/images/projectImages/nytScrape.jpeg",
         "altText": "New York Times Scraper: Scrape articles from the New York Times and save them for later",
         "deployed" : "https://nyt-scraper1231.herokuapp.com/",
         "git" : "https://github.com/nickmora/NYT-Scraper",

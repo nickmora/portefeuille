@@ -10,16 +10,17 @@ import mongodbIcon from "../../images/logos/mongodb.svg"
 import nodeIcon from "../../images/logos/node.svg"
 import mysqlIcon from "../../images/logos/mysql.svg"
 import html5Icon from "../../images/logos/html5.svg"
-import { Grid, Card, CardContent } from "@material-ui/core"
+import { Grid, Card, CardContent, Typography } from "@material-ui/core"
 import { withStyles } from "@material-ui/core/styles"
 
 const styles = {
     image: {
-        height: 35,
+        height: 50,
         padding: 15
     },
     card: {
         marginTop: 200,
+        marginBottom: 200,
         width: "100%"
     }
 }
@@ -31,7 +32,14 @@ const TechStack = (props) => {
             <Grid container item xs={11}>
                 <Card className={classes.card}>
                     <CardContent>
-                        <Grid container xs={12} justify="center">
+                        <Typography
+                            variant = "h2"
+                            align = "center"
+                            gutterBottom
+                        >
+                            Tech Stack
+                        </Typography>
+                        <Grid container justify="center">
 
                             <Grid item xs={6}>
                                 <img className={classes.image} src={bootstrapIcon} alt="bootstrap" />

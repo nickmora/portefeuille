@@ -14,7 +14,7 @@ class Project extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Card className>
+            <Card>
                 <Grid spacing={24} container direction="row">
                     <Grid item xs={6} direction="column" container>
                         <CardContent>
@@ -24,24 +24,27 @@ class Project extends Component {
                             <Typography variant="h5" gutterBottom>
                                 {this.props.description}
                             </Typography>
-                            <Typography variant="body1">
-                                Techs Used:<ul>
-                                    {this.props.techs.map(tech => (
-                                        <li>
-                                            {tech}
-                                        </li>
-                                    ))}
+                            <div>
+                                Techs Used:
+                                <ul>
+                                    <Typography variant="body1">
+                                        {this.props.techs.map(tech => (
+                                            <li key={tech}>
+                                                {tech}
+                                            </li>
+                                        ))}
+                                    </Typography>
                                 </ul>
-                            </Typography>
+                            </div>
                         </CardContent>
                     </Grid>
-                    <Grid item xs={6} direction="column" container spacing = {24}>
+                    <Grid item xs={6} direction="column" container spacing={24}>
 
-                            <CardMedia
-                                className={classes.image}
-                                component="img"
-                                image={this.props.img}
-                            />
+                        <CardMedia
+                            className={classes.image}
+                            component="img"
+                            image={this.props.img}
+                        />
 
                         <CardActions>
                             <Grid container spacing={8}>
